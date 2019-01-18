@@ -124,7 +124,7 @@ function voip_admin_server_form_validate($form, &$form_state) {
 function voip_admin_server_form_submit($form, &$form_state) {
   $server = $form_state['values']['server'];
 
-  // Remove unecessary values
+  // Remove unnecessary values
   unset($form_state['values']['op'], $form_state['values']['submit'], $form_state['values']['server'], $form_state['values']['form_token'], $form_state['values']['form_id']);
 
   //Save VoIP Voice
